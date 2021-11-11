@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0020CA4B273DA12D00D41B0E /* DeveloperCocoaPodTutorial.h in Headers */ = {isa = PBXBuildFile; fileRef = 0020CA4A273DA12D00D41B0E /* DeveloperCocoaPodTutorial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00F1DB88273DACBC005974D2 /* DeveloperCocoaPodTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F1DB87273DACBC005974D2 /* DeveloperCocoaPodTutorial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0020CA47273DA12D00D41B0E /* DeveloperCocoaPodTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeveloperCocoaPodTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0020CA4A273DA12D00D41B0E /* DeveloperCocoaPodTutorial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeveloperCocoaPodTutorial.h; sourceTree = "<group>"; };
+		00F1DB87273DACBC005974D2 /* DeveloperCocoaPodTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCocoaPodTutorial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				0020CA4A273DA12D00D41B0E /* DeveloperCocoaPodTutorial.h */,
+				00F1DB87273DACBC005974D2 /* DeveloperCocoaPodTutorial.swift */,
 			);
 			path = DeveloperCocoaPodTutorial;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					0020CA46273DA12D00D41B0E = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F1DB88273DACBC005974D2 /* DeveloperCocoaPodTutorial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		0020CA4F273DA12D00D41B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -280,6 +286,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +295,7 @@
 		0020CA50273DA12D00D41B0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
